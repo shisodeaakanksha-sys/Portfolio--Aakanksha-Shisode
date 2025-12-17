@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- ParticlesJS -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<style>
+
+/* ---------------- GLOBAL THEME ---------------- */
+body{
+ background:#090011;
+ color:white;
+ font-family: "Poppins", sans-serif;
+ overflow-x:hidden;
+}
+
+/* Light mode */
+[data-theme="light"]{
+ background:white;
+ color:black;
+}
+
+a{ text-decoration:none; color:#b785ff; }
+
+/* Neon style */
+.neon{
+ color:#b785ff;
+ text-shadow:0 0 8px #b785ff;
+}
+
+/* Navbar */
+.navbar{
+ background:#0e001d;
+}
+
+.hero{
+ min-height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ padding-top:120px;
+ text-align:center;
+}
+
+/* Typing text */
+#typing{
+ border-right:3px solid #fff;
+ white-space:nowrap;
+ overflow:hidden;
+ animation:typing 4s steps(30,end) infinite;
+}
+@keyframes typing{
+ 0%{width:0;}
+ 50%{width:100%;}
+ 100%{width:0;}
+}
+
+/* Cards */
+.neon-card{
+ background:#0b0015;
+ border:2px solid #6a0dad;
+ box-shadow:0 0 20px #5700ff50;
+ border-radius:12px;
+ transition:.3s;
+ height:100%;
+}
+.neon-card:hover{
+ transform:translateY(-10px);
+ box-shadow:0 0 35px #8c3eff;
+}
+
+/* Certificate images */
+.cert-img{
+ width:100%;
+ border-radius:8px;
+}
+
+/* Blog images */
+.blog-img{
+ width:100%;
+ border-radius:8px;
+}
+
+/* Contact form */
+form input, textarea{
+ background:#110022!important;
+ border:none!important;
+ color:white!important;
+}
+
+/* Footer */
+footer{
+ padding:20px;
+ background:#0e001d;
+ text-align:center;
+ margin-top:40px;
+ color:#aa74ff;
+}
+
+/* Dark/Light toggle */
+.toggle{
+ font-size:26px;
+ cursor:pointer;
+}
+
+/* Particles background */
+#particles-js{
+ position:fixed;
+ width:100%;
+ height:100%;
+ z-index:-10;
+ top:0;
+ left:0;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand neon" href="#">Aakanksha Shisode</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#cert">Certificates</a></li>
+<li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center justify-content-center flex-wrap text-center text-md-start">
+
+    <!-- LEFT IMAGE -->
+    <div class="me-md-4 mb-4 mb-md-0">
+        <img src="1234.jpg" alt="Aakanksha" 
+        style="width:180px; height:180px; object-fit:cover; border-radius:50%; border:3px solid #9b59b6;">
+    </div>
+
+    <!-- RIGHT TEXT -->
+    <div>
+        <h1 class="display-3 neon">Hi, I'm <span id="typing">Aakanksha Shisode !</span></h1>
+        <p class="display-3 neon">Electronics and Computer Engineer</p>
+
+        <a href="Aakanksha_Shisode.pdf" download class="btn btn-outline-light mt-3">
+            Download Resume -->
+        </a>
+
+        <div class="mt-4 d-flex justify-content-center">
+    <a class="mx-3" href="tel:7744938632">
+        Contact no. - 7744938632
+    </a>
+
+    <a class="mx-3" href="mailto:shisodeaakanksha@gmail.com">
+        Email - shisodeaakanksha@gmail.com
+    </a>
+
+    <a class="mx-3" href="https://www.linkedin.com/in/aakanksha-shisode-68081030b">
+        <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+</div>
+
+    </div>
+</section>
+
+
+
+
+<!-- ABOUT -->
+<section id="about" class="container py-5">
+<h2 class="neon text-center mb-4">About Me</h2>
+<p data-aos="fade-up" class="text-center">
+I’m Aakanksha Shisode — an enthusiastic Electronics and Computer Engineering graduate who loves exploring the world of artificial intelligence and modern software technologies. I have a strong foundation in programming, machine learning, deep learning concepts, and database systems, along with hands-on experience using Python, MySQL, and various development frameworks.
+
+I enjoy building innovative tech solutions, solving analytical problems, and continuously learning new skills that help me grow in the AI and software domain. My journey so far includes academic projects and certifications that have strengthened my technical knowledge and boosted my confidence in real-world applications.
+
+Beyond technical skills, I value creativity, teamwork, and good communication. I love collaborating with people, taking ownership of tasks, and staying curious about how technology can make life smarter, easier, and more efficient.
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="container py-5">
+<h2 class="neon text-center mb-4">Education</h2>
+
+<div class="row justify-content-center">
+
+<!-- B.Tech -->
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-user-graduate fa-2x mb-2"></i>
+<h4>Bachelor of Technology</h4>
+<p class="mt-2 mb-1">Electronics and Computer Engineering</p>
+<p class="small">CSMSS Chh. Shau College of Engineering</p>
+<p class="small">2022 – 2026</p>
+</div>
+</div>
+
+<!-- HSC -->
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-school fa-2x mb-2"></i>
+<h4>Higher Secondary Education</h4>
+<p class="mt-2 mb-1">12th Science</p>
+<p class="small">Orchid Junior College</p>
+<p class="small">Completed: 2022</p>
+</div>
+</div>
+
+<!-- SSC -->
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-book fa-2x mb-2"></i>
+<h4>Secondary Education</h4>
+<p class="mt-2 mb-1">10th</p>
+<p class="small">Orchid Techno School</p>
+<p class="small">Completed: 2020</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container py-5">
+<h2 class="neon text-center mb-5">Projects</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3">
+<h4>Eye Disease Prediction Using CNN</h4>
+<p>Deep Learning | CNN | Python | Image Classification | Google Colab</p>
+<p>A deep learning-based project that classifies retinal images to detect diseases like Cataract, Glaucoma, and Retinopathy with 90% accuracy.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3">
+<h4>Real-Time Speech Emotion Recognition</h4>
+<p>Deep Learning | CNN | LSTM | GRU | NLP | Python | VS Code</p>
+<p>Deep learning based project instantly detects and displays human emotions from live microphone input with
+high accuracy, low latency, and noise handling with 80% accuracy.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3">
+<h4>JourneyGram: Travelling App</h4>
+<p>Flutter | MySQL | VS Code</p>
+<p>Built a customized Travelling App as all-in-one solution that personalizes trip itineraries, manages bookings,and provides real-time travel guidance.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3">
+<h4>SankatMochak : Disaster Preparedness App</h4>
+<p>Flutter l Firebase | VS Code</p>
+<p>An interactive digital platform that uses gamified learning, virtual drills, and real-time alerts to educate and prepare students for disasters effectively and inclusively.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3">
+<h4>IPL Data Analysis</h4>
+<p>Data Analysis | HTML | CSS | Bootstrap | VS Code</p>
+<p>A data-driven project that explores, visualizes, and interprets IPL match and player statistics.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3">
+<h4>Digital Restaurant Menu</h4>
+<p>HTML l CSS | Bootstrap | Frontend Development | MySQL</p>
+<p>A smart project that replaces traditional menus with an interactive digital system for easy food selection,ordering, and enhanced customer experience.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="cert" class="container py-5">
+<h2 class="neon text-center mb-4">Certificates</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-3" data-aos="fade-up">
+    <a href="certificates/NPTEl Python.jpg" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">NPTEL - Joy of Computing using Python</p>
+    </div>
+    </a>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="fade-left">
+    <a href="certificates/ECE3027_Shisode_Aakanksha_Ajay.pdf" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">NPTEL - Programming in Java</p>
+    </div>
+    </a>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="fade-left">
+    <a href="certificates/IOT.jpg" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">NPTEL - Introduction to IoT</p>
+    </div>
+    </a>
+</div>
+
+
+<div class="col-md-4 mb-3" data-aos="fade-left">
+    <a href="certificates/Cyber Security and Privacy.pdf" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">NPTEL - Cyber security and Privacy</p>
+    </div>
+    </a>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="fade-left">
+    <a href="certificates/Python fundamentals.jpg" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">LinkedIn Learning - Python Foundations: Fundamentals</p>
+    </div>
+    </a>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="fade-left">
+    <a href="certificates/Gen AI.jpg" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">LinkedIn Learning - Generative AI and Cyber Range</p>
+    </div>
+    </a>
+</div>
+
+
+<div class="col-md-4 mb-3" data-aos="fade-left">
+    <a href="certificates/LinkedIn Learning Certificate.pdf" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">LinkedIn - Cybersecurity Foundations</p>
+    </div>
+    </a>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="fade-left">
+    <a href="certificates/cert1.pdf" target="_blank" class="certificate-link">
+    <div class="neon-card p-3">
+        <p class="mt-3 text-center">MKCL KLiC – C Programming</p>
+    </div>
+    </a>
+</div>
+
+</div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="container py-5">
+<h2 class="neon text-center mb-4">Technical Skills</h2>
+
+<div class="row">
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-terminal fa-2x mb-2"></i>
+<h5>C Programming</h5>
+<p>Core programming logic building</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-database fa-2x mb-2"></i>
+<h5>MySQL</h5>
+<p>Database management & querying</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-brain fa-2x mb-2"></i>
+<h5>Deep Learning</h5>
+<p>CNN, AI model development</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-brands fa-python fa-2x mb-2"></i>
+<h5>Python Programming</h5>
+<p>ML scripting & backend logic</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-leaf fa-2x mb-2"></i>
+<h5>Django</h5>
+<p>Python web backend framework</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-code fa-2x mb-2"></i>
+<h5>Java Basics</h5>
+<p>OOP fundamentals & logic</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-brands fa-html5 fa-2x mb-2"></i>
+<h5>HTML & CSS</h5>
+<p>Frontend page building & styling</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-robot fa-2x mb-2"></i>
+<h5>Machine Learning</h5>
+<p>Model training & evaluation</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-brands fa-bootstrap fa-2x mb-2"></i>
+<h5>Bootstrap</h5>
+<p>Responsive UI development</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="skills" class="container py-5">
+<h2 class="neon text-center mb-4"> Soft Skills</h2>
+<div class="row mt-4">
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-user-tie fa-2x mb-2"></i>
+<h5>Leadership</h5>
+<p>Team handling & coordination</p>
+</div>
+</div>
+
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-lightbulb fa-2x mb-2"></i>
+<h5>Problem Solving</h5>
+<p>Algorithms & debugging skills</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-users fa-2x mb-2"></i>
+<h5>Teamwork</h5>
+<p>Collaborative project experience</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-comments fa-2x mb-2"></i>
+<h5>Communication Skills</h5>
+<p>Professional speaking & writing</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-3" data-aos="zoom-in">
+<div class="neon-card p-3 text-center">
+<i class="fa-solid fa-brain-circuit fa-2x mb-2"></i>
+<h5>Logical Thinking</h5>
+<p>Structured approach to tasks</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+<h2 class="neon text-center mb-4">Contact Me</h2>
+
+<form data-aos="fade-up" class="col-md-6 mx-auto">
+<input class="form-control mb-3" placeholder="Name">
+<input class="form-control mb-3" placeholder="Email">
+<textarea class="form-control mb-3" placeholder="Message"></textarea>
+<button class="btn btn-outline-light w-100">Submit</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2025 Your Name | All rights reserved
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+ duration:1200,
+ once:true
+});
+</script>
+
+<script>
+particlesJS.load('particles-js');
+</script>
+
+<script>
+document.getElementById("modeButton").onclick = ()=>{
+ let theme=document.documentElement.getAttribute("data-theme");
+ document.documentElement.setAttribute("data-theme", theme==="dark"?"light":"dark");
+};
+</script>
+
+</body>
+</html>
+
